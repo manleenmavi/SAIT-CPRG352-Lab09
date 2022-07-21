@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;700&display=swap');
+
+* {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);
+    margin: 0;
+}
+
+.heading {
+    background: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.heading h1 {
+    margin: 0;
+}
+
+.main_content {
+    padding: 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    gap: 20px;
+    min-height: 80%
+}
+
+.side_element {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 15px 
+}
+
+.side_element > h2 {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 3px solid #0052D4;
+}
+
+.side_element > form {
+    margin-top: 30px;
+}
+
+.side_element > form > div {
+    margin-bottom: 20px;
+}
+
+.side_element > form > div:not(.input_div_not_flex){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.form_submit_div {
+    justify-content: center !important;
+}
+
+.form_submit_div input[type=submit] {
+    background-color: #0052D4;
+    border: none;
+    border-radius: 10px; 
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.any_message {
+    text-align: center;
+    background-color: #800000;
+    color: white;
+    padding: 5px;
+}
+
+.user_list  {
+    padding: 20px 10px;
+    background-color: white;
+    align-self: stretch;
+    border-radius: 10px;
+}
+
+.user_list > div:first-child > table {
+    border: 3px solid #0052D4;
+    border-collapse: collapse;
+}
+
+.user_list > div > table > tbody > tr > th {
+    padding: 10px;
+}
+
+.user_list > div > table > tbody > tr > td {
+    padding: 5px;
+}
+
+.user_list > div:first-child > table > tbody > tr:first-child {
+    background-color: #0052D4 !important;
+    color: white;
+}
+
+.user_list > div:first-child > table > tbody > tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.delete_user_message {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
